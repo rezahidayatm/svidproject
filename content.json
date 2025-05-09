@@ -1,0 +1,28 @@
+{
+    "Format": "2.6.0",
+    "Changes": [
+        // define language
+        {
+            "Action": "EditData",
+            "Target": "Data/AdditionalLanguages",
+            "Entries": {
+                "{{ModId}}_Esperanto": { // for technical reasons, you need to specify the ID here *and* in the "ID" field
+                    "ID": "{{ModId}}_Esperanto",
+                    "LanguageCode": "eo",
+                    "ButtonTexture": "Mods/{{ModId}}/Button",
+                    "UseLatinFont": true,
+                    "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+                    "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+                    "ClockDateFormat": "[DAY_OF_WEEK] [DAY_OF_MONTH]"
+                }
+            }
+        },
+
+        // load button texture
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Button",
+            "FromFile": "assets/button.png"
+        }
+    ]
+}
