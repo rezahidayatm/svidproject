@@ -6,10 +6,10 @@
             "Action": "EditData",
             "Target": "Data/AdditionalLanguages",
             "Entries": {
-                "{{ModId}}_Esperanto": { // for technical reasons, you need to specify the ID here *and* in the "ID" field
-                    "ID": "{{ModId}}_Esperanto",
-                    "LanguageCode": "eo",
-                    "ButtonTexture": "Mods/{{ModId}}/Button",
+                "rezam.svid_Indonesia": { // for technical reasons, you need to specify the ID here *and* in the "ID" field
+                    "ID": "rezam.svid_Indonesia",
+                    "LanguageCode": "id",
+                    "ButtonTexture": "Mods/rezam.svid/Button",
                     "UseLatinFont": true,
                     "TimeFormat": "[HOURS_24_00]:[MINUTES]",
                     "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
@@ -21,8 +21,36 @@
         // load button texture
         {
             "Action": "Load",
-            "Target": "Mods/{{ModId}}/Button",
-            "FromFile": "assets/button.png"
+            "Target": "Mods/rezam.svid/Button",
+            "FromFile": "assets/LooseSprites/LanguageButtons.id-ID.png"
+        },
+
+        // load data/
+        {
+            "Action": "Load",
+            "Target": "Data/Achievements, Data/Boots, Data/Bundles, Data/EngagementDialogue, Data/ExtraDialogue, Data/hats, Data/mail, Data/Monsters, Data/NPCGiftTastes, Data/Quests, Data/SecretNotes",
+            "FromFile": "assets/{{Target}}.id-ID.json",
+            "When": {
+                "Language": "id"
+            }
         }
+
+        // load data/Events/
+
+        // load data/Festivals/
+
+        // load data/TV/
+
+        // load Dialogue/
+
+        // load LooseSprites/
+
+        // load Maps/
+
+        // load Minigames/
+
+        // load Strings/
+
+        // load Strings/schedules/
     ]
 }
